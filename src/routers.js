@@ -5,9 +5,9 @@
 
 export default (router)=>{
     router.map({
-        '*': {
-            component: require('./views/test/TestHome.vue')
-        },
+        // '*': {
+        //     component: require('./views/test/TestHome.vue')
+        // },
         '/home': {
             name: 'home',
             component: require('./views/test/TestHome.vue')

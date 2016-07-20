@@ -1,21 +1,29 @@
 <template>
     <div id="about">
-        {{ message }}
+        <h1>关于我们：</h1>
+        <ul>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ul>
     </div>
 </template>
-<style>
-    body{
-        background-color:#fff;
-    }
-</style>
+
 <script>
-    export default {
-        data () {
-            return {
-                data: {
-                    message: '关于猎狗团队'
-                }
+    module.exports = {
+        data: function () {
+            return{
+                todos: [
+                    { text: 'Learn JavaScript' },
+                    { text: 'Learn Vue.js' },
+                    { text: 'Build Something Awesome' }
+                ]
             }
         }
     }
 </script>
+<style>
+    body{
+        /*background-color:#fff;*/
+    }
+</style>

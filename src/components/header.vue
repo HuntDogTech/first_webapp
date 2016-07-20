@@ -21,6 +21,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a>首页 <span class="sr-only">(current)</span></a></li>
                     <li><a v-link="{ path: '/home' }">技术</a></li>
+                    <li><a v-link="{ path: '/chatroom' }">聊天室</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
